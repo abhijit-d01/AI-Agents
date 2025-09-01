@@ -81,28 +81,35 @@ Follow these steps to set up and run the project locally.
 
 ### 2\. Clone the Repository
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   git clone [https://github.com/abhijit-d01/AI-Agents.git](https://github.com/abhijit-d01/AI-Agents.git)  cd AI-Agents/LangGraph/AI Assistant   `
-
+```Bash 
+git clone [https://github.com/abhijit-d01/AI-Agents.git](https://github.com/abhijit-d01/AI-Agents.git)  
+cd AI-Agents/LangGraph/AI Assistant
+```
 ### 3\. Create a Virtual Environment
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML``   python -m venv venv  source venv/bin/activate  # On Windows, use `venv\Scripts\activate`   ``
-
+```Bash
+python -m venv venv  source venv/bin/activate  # On Windows, use `venv\Scripts\activate
+```
 ### 4\. Install Dependencies
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   pip install -r requirements.txt   `
-
+```Bash
+pip install -r requirements.txt
+```
 ### 5\. Set Up Environment Variables
 
 Create a .env file in the project's root directory and add your API keys.
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   OPENAI_API_KEY="your-openai-api-key"  # Example for Tavily Search API  # TAVILY_API_KEY="your-tavily-api-key"   `
-
+```Bash
+OPENAI_API_KEY="your-openai-api-key"  # Example for Tavily Search API  # TAVILY_API_KEY="your-tavily-api-key"
+```
 Usage
 -----
 
 Run the main application from the terminal. This will launch an interactive chat session where you can converse with the AI assistant.
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   python main.py   `
+```Bash
+python main.py
+```
 
 Type your queries into the console and press Enter. To exit the application, type exit.
 
@@ -121,4 +128,6 @@ Project Structure
 Example
 -------
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   $ python main.py  > Starting AI Assistant... Type 'exit' to quit.  You: What was the score of the latest world cup final and who scored the goals?  > Assistant is thinking... (Calling Agent -> Using Tool: tavily_search_results_json)  Assistant: The final of the 2022 FIFA World Cup between Argentina and France ended in a 3-3 draw after extra time. Argentina won the subsequent penalty shootout 4-2.  The goal scorers were:  - **Argentina:** Lionel Messi (2 goals), Ángel Di María (1 goal).  - **France:** Kylian Mbappé (3 goals - a hat-trick).   `
+```Bash
+$ python main.py  > Starting AI Assistant... Type 'exit' to quit.  You: What was the score of the latest world cup final and who scored the goals?  > Assistant is thinking... (Calling Agent -> Using Tool: tavily_search_results_json)  Assistant: The final of the 2022 FIFA World Cup between Argentina and France ended in a 3-3 draw after extra time. Argentina won the subsequent penalty shootout 4-2.  The goal scorers were:  - **Argentina:** Lionel Messi (2 goals), Ángel Di María (1 goal).  - **France:** Kylian Mbappé (3 goals - a hat-trick).   
+```
